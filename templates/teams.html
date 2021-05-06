@@ -1,0 +1,873 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+<link rel="stylesheet" href="static/cardtry.css">
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:300,400,600i&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="static/teams.css">
+
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 150px;
+  height: 150px;
+  perspective: 1000px;
+  border-radius: 50%;
+border:2px solid orange;
+margin-top:10px;
+margin-left:10px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 50%;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+  border-radius: 50%;
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 50%;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+  border-radius: 50%;
+}
+.cardcont {
+   margin-top:20px;
+}
+
+.chairmanccc {
+   margin-top:-120px;
+margin-right:125px;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+  border-radius: 50%;
+}
+
+img {
+  border-radius: 50%;
+  border:5px solid orange;
+  
+}
+
+
+.flip-carde {
+  background-color: transparent;
+  width: 130px;
+  height: 130px;
+  perspective: 1000px;
+  border-radius: 50%;
+border:2px solid orange;
+margin-top:10px;
+margin-right:10px;
+}
+
+.flip-card-innere {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 50%;
+}
+
+.flip-carde:hover .flip-card-innere {
+  transform: rotateY(180deg);
+  border-radius: 50%;
+}
+
+.flip-card-fronte, .flip-card-backe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 50%;
+}
+
+.flip-card-fronte {
+  background-color: #bbb;
+  color: black;
+  border-radius: 50%;
+}
+.cardconte {
+   margin-top:20px;
+}
+.chairmaneec {
+   margin-top:-130px;
+margin-right:125px;
+}
+
+
+
+.flip-card-backe {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+  border-radius: 50%;
+}
+
+
+</style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+          <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Highway Grid CSS Template</title>
+<!-- 
+
+Highway Template
+
+https://templatemo.com/tm-520-highway
+
+-->
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="static/css/bootstrap.min.css">
+        <link rel="stylesheet" href="static/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="static/css/fontAwesome.css">
+        <link rel="stylesheet" href="static/css/light-box.css">
+        <link rel="stylesheet" href="static/css/teamnav.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Kanit:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <style>
+       
+        </style>
+    </head>
+
+<body>
+
+    <div class="navd">
+        <div class="logo">
+            <a href="index.html"><img src="static/v_logo.png" width="50%" hieght="50%"></a>
+        </div>
+      <div class="menu-icon">
+        <span></span>
+      </div>
+    </div>
+
+
+    <div class="container">
+              <div class="row">
+                <div class="col-xs-12 ">
+                  <nav>
+                    <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                      <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">CCC</a>
+                      <a class="nav-item nav-link" id="nav-eec-tab" data-toggle="tab" href="#nav-eec" role="tab" aria-controls="nav-eec" aria-selected="false">EEC</a>
+                      <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">PPC</a>
+                      <a class="nav-item nav-link" id="nav-about-tab" data-toggle="tab" href="#nav-about" role="tab" aria-controls="nav-about" aria-selected="false">PRC</a>
+<a class="nav-item nav-link" id="nav-about-tab2" data-toggle="tab" href="#nav-about2" role="tab" aria-controls="nav-about2" aria-selected="false">ARC</a>
+<a class="nav-item nav-link" id="nav-about-tab3" data-toggle="tab" href="#nav-about3" role="tab" aria-controls="nav-about3" aria-selected="false">RC</a>
+<a class="nav-item nav-link" id="nav-about-tab4" data-toggle="tab" href="#nav-about4" role="tab" aria-controls="nav-about4" aria-selected="false">HC</a>
+                    </div>
+                  </nav>
+                  <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+<center>
+<FONT COLOR="white">
+<H2>
+Central Coordination Committee
+</H2>
+</font>
+</center>                        
+                    <div class="cccmember">
+<div class="chairmanccc">
+<div class="infocardContainerc">
+  <div id="mainc">
+    <img src="static/dd.png"></img>
+  </div>
+  <div id="textboisc">
+    <h3>jbkhklhfihs</h3>
+    <h9>Professional</h9>
+<h9>dgsgs</h9>
+    
+    </div>
+</div>
+</div>
+
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="static/dd.png" alt="Avatar" style="width:145px;height:145px;">
+    </div>
+    <div class="flip-card-back">
+      <div class="cardcont">
+      <h5>John Doe</h5> 
+      <p>Architect & Engineer</p> 
+      
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="static/dd.png" alt="Avatar" style="width:145px;height:145px;">
+    </div>
+    <div class="flip-card-back">
+      <div class="cardcont">
+      <h5>John Doe</h5> 
+      <p>Architect & Engineer</p> 
+      
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="static/dd.png" alt="Avatar" style="width:145px;height:145px;">
+    </div>
+    <div class="flip-card-back">
+      <div class="cardcont">
+      <h5>John Doe</h5> 
+      <p>Architect & Engineer</p> 
+      
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="static/dd.png" alt="Avatar" style="width:145px;height:145px;">
+    </div>
+    <div class="flip-card-back">
+      <div class="cardcont">
+      <h5>John Doe</h5> 
+      <p>Architect & Engineer</p> 
+      
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="static/dd.png" alt="Avatar" style="width:145px;height:145px;">
+    </div>
+    <div class="flip-card-back">
+      <div class="cardcont">
+      <h5>John Doe</h5> 
+      <p>Architect & Engineer</p> 
+      
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="static/dd.png" alt="Avatar" style="width:145px;height:145px;">
+    </div>
+    <div class="flip-card-back">
+      <div class="cardcont">
+      <h5>John Doe</h5> 
+      <p>Architect & Engineer</p> 
+      
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="static/dd.png" alt="Avatar" style="width:145px;height:145px;">
+    </div>
+    <div class="flip-card-back">
+      <div class="cardcont">
+      <h5>John Doe</h5> 
+      <p>Architect & Engineer</p> 
+      
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="static/dd.png" alt="Avatar" style="width:145px;height:145px;">
+    </div>
+    <div class="flip-card-back">
+      <div class="cardcont">
+      <h5>John Doe</h5> 
+      <p>Architect & Engineer</p> 
+      
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="static/dd.png" alt="Avatar" style="width:145px;height:145px;">
+    </div>
+    <div class="flip-card-back">
+      <div class="cardcont">
+      <h5>John Doe</h5> 
+      <p>Architect & Engineer</p> 
+      
+      </div>
+    </div>
+  </div>
+</div>
+
+                        </div>
+                         </div>
+
+
+
+
+
+
+
+                                            <div class="tab-pane fade" id="nav-eec" role="tabpanel" aria-labelledby="nav-eec-tab">
+<center> 
+<FONT COLOR="white">
+<H2>
+Event Execution Committee
+</H2>
+</font>
+</center>
+ <div class="cccmember">
+<div class="chairmaneec">
+<div class="infocardContainer">
+  <div id="main">
+    <img src="static/dd.png"></img>
+  </div>
+  <div id="textbois">
+    <h5>jbkhklhfihs</h5>
+    <h9>Professional</h9>
+<h9>dgsgs</h9>
+    
+    </div>
+</div>
+</div>
+
+<div class="flip-carde">
+  <div class="flip-card-innere">
+    <div class="flip-card-fronte">
+      <img src="static/dd.png" alt="Avatar" style="width:125px;height:125px;">
+    </div>
+    <div class="flip-card-backe">
+      <div class="cardconte">
+      <h5>John Doe</h5> 
+      <p>Architect & Engineer</p> 
+      
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flip-carde">
+  <div class="flip-card-innere">
+    <div class="flip-card-fronte">
+      <img src="static/dd.png" alt="Avatar" style="width:125px;height:125px;">
+    </div>
+    <div class="flip-card-backe">
+      <div class="cardconte">
+      <h5>John Doe</h5> 
+      <p>Architect & Engineer</p> 
+      
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flip-carde">
+  <div class="flip-card-innere">
+    <div class="flip-card-fronte">
+      <img src="static/dd.png" alt="Avatar" style="width:125px;height:125px;">
+    </div>
+    <div class="flip-card-backe">
+      <div class="cardconte">
+      <h5>John Doe</h5> 
+      <p>Architect & Engineer</p> 
+      
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flip-carde">
+  <div class="flip-card-innere">
+    <div class="flip-card-fronte">
+      <img src="static/dd.png" alt="Avatar" style="width:125px;height:125px;">
+    </div>
+    <div class="flip-card-backe">
+      <div class="cardconte">
+      <h5>John Doe</h5> 
+      <p>Architect & Engineer</p> 
+      
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flip-carde">
+  <div class="flip-card-innere">
+    <div class="flip-card-fronte">
+      <img src="static/dd.png" alt="Avatar" style="width:125px;height:125px;">
+    </div>
+    <div class="flip-card-backe">
+      <div class="cardconte">
+      <h5>John Doe</h5> 
+      <p>Architect & Engineer</p> 
+      
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flip-carde">
+  <div class="flip-card-innere">
+    <div class="flip-card-fronte">
+      <img src="static/dd.png" alt="Avatar" style="width:125px;height:125px;">
+    </div>
+    <div class="flip-card-backe">
+      <div class="cardconte">
+      <h5>John Doe</h5> 
+      <p>Architect & Engineer</p> 
+      
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flip-carde">
+  <div class="flip-card-innere">
+    <div class="flip-card-fronte">
+      <img src="static/dd.png" alt="Avatar" style="width:125px;height:125px;">
+    </div>
+    <div class="flip-card-backe">
+      <div class="cardconte">
+      <h5>John Doe</h5> 
+      <p>Architect & Engineer</p> 
+      
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flip-carde">
+  <div class="flip-card-innere">
+    <div class="flip-card-fronte">
+      <img src="static/dd.png" alt="Avatar" style="width:125px;height:125px;">
+    </div>
+    <div class="flip-card-backe">
+      <div class="cardconte">
+      <h5>John Doe</h5> 
+      <p>Architect & Engineer</p> 
+      
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flip-carde">
+  <div class="flip-card-innere">
+    <div class="flip-card-fronte">
+      <img src="static/dd.png" alt="Avatar" style="width:125px;height:125px;">
+    </div>
+    <div class="flip-card-backe">
+      <div class="cardconte">
+      <h5>John Doe</h5> 
+      <p>Architect & Engineer</p> 
+      
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flip-carde">
+  <div class="flip-card-innere">
+    <div class="flip-card-fronte">
+      <img src="static/dd.png" alt="Avatar" style="width:125px;height:125px;">
+    </div>
+    <div class="flip-card-backe">
+      <div class="cardconte">
+      <h5>John Doe</h5> 
+      <p>Architect & Engineer</p> 
+      
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flip-carde">
+  <div class="flip-card-innere">
+    <div class="flip-card-fronte">
+      <img src="static/dd.png" alt="Avatar" style="width:125px;height:125px;">
+    </div>
+    <div class="flip-card-backe">
+      <div class="cardconte">
+      <h5>John Doe</h5> 
+      <p>Architect & Engineer</p> 
+      
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flip-carde">
+  <div class="flip-card-innere">
+    <div class="flip-card-fronte">
+      <img src="static/dd.png" alt="Avatar" style="width:125px;height:125px;">
+    </div>
+    <div class="flip-card-backe">
+      <div class="cardconte">
+      <h5>John Doe</h5> 
+      <p>Architect & Engineer</p> 
+      
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flip-carde">
+  <div class="flip-card-innere">
+    <div class="flip-card-fronte">
+      <img src="static/dd.png" alt="Avatar" style="width:125px;height:125px;">
+    </div>
+    <div class="flip-card-backe">
+      <div class="cardconte">
+      <h5>John Doe</h5> 
+      <p>Architect & Engineer</p> 
+      
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flip-carde">
+  <div class="flip-card-innere">
+    <div class="flip-card-fronte">
+      <img src="static/dd.png" alt="Avatar" style="width:125px;height:125px;">
+    </div>
+    <div class="flip-card-backe">
+      <div class="cardconte">
+      <h5>John Doe</h5> 
+      <p>Architect & Engineer</p> 
+      
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flip-carde">
+  <div class="flip-card-innere">
+    <div class="flip-card-fronte">
+      <img src="static/dd.png" alt="Avatar" style="width:125px;height:125px;">
+    </div>
+    <div class="flip-card-backe">
+      <div class="cardconte">
+      <h5>John Doe</h5> 
+      <p>Architect & Engineer</p> 
+      
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="flip-carde">
+  <div class="flip-card-innere">
+    <div class="flip-card-fronte">
+      <img src="static/dd.png" alt="Avatar" style="width:125px;height:125px;">
+    </div>
+    <div class="flip-card-backe">
+      <div class="cardconte">
+      <h5>John Doe</h5> 
+      <p>Architect & Engineer</p> 
+      
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flip-carde">
+  <div class="flip-card-innere">
+    <div class="flip-card-fronte">
+      <img src="static/dd.png" alt="Avatar" style="width:125px;height:125px;">
+    </div>
+    <div class="flip-card-backe">
+      <div class="cardconte">
+      <h5>John Doe</h5> 
+      <p>Architect & Engineer</p> 
+      
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flip-carde">
+  <div class="flip-card-innere">
+    <div class="flip-card-fronte">
+      <img src="static/dd.png" alt="Avatar" style="width:125px;height:125px;">
+    </div>
+    <div class="flip-card-backe">
+      <div class="cardconte">
+      <h5>John Doe</h5> 
+      <p>Architect & Engineer</p> 
+      
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flip-carde">
+  <div class="flip-card-innere">
+    <div class="flip-card-fronte">
+      <img src="static/dd.png" alt="Avatar" style="width:125px;height:125px;">
+    </div>
+    <div class="flip-card-backe">
+      <div class="cardconte">
+      <h5>John Doe</h5> 
+      <p>Architect & Engineer</p> 
+      
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flip-carde">
+  <div class="flip-card-innere">
+    <div class="flip-card-fronte">
+      <img src="static/dd.png" alt="Avatar" style="width:125px;height:125px;">
+    </div>
+    <div class="flip-card-backe">
+      <div class="cardconte">
+      <h5>John Doe</h5> 
+      <p>Architect & Engineer</p> 
+      
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flip-carde">
+  <div class="flip-card-innere">
+    <div class="flip-card-fronte">
+      <img src="static/dd.png" alt="Avatar" style="width:125px;height:125px;">
+    </div>
+    <div class="flip-card-backe">
+      <div class="cardconte">
+      <h5>John Doe</h5> 
+      <p>Architect & Engineer</p> 
+      
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+ </div>
+                      </div>
+
+
+
+
+  <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+<center> 
+<FONT COLOR="white">
+<H2>
+Printing & Publishing Committee
+</H2>
+</font>
+</center>
+ <div class="cccmember">
+
+  
+    
+                           </div>
+
+                      </div>
+
+
+
+
+                            <div class="tab-pane fade" id="nav-about" role="tabpanel" aria-labelledby="nav-about-tab">
+<center> 
+<FONT COLOR="white">
+<H2>
+Public Relation Committee
+</H2>
+</font>
+</center>
+ <div class="cccmember">
+
+  
+    
+                          </div>
+
+                     </div>
+ <div class="tab-pane fade" id="nav-about2" role="tabpanel" aria-labelledby="nav-about-tab2">
+<center> 
+<FONT COLOR="white">
+<H2>
+Alumni Relation Committee
+</H2>
+</font>
+</center>
+ <div class="cccmember">
+
+  
+    
+                           </div>
+
+                    </div>
+ <div class="tab-pane fade" id="nav-about3" role="tabpanel" aria-labelledby="nav-about-tab3">
+<center> 
+<FONT COLOR="white">
+<H2>
+Reception Committee
+</H2>
+</font>
+</center>
+      <div class="cccmember">
+
+  
+                          </div>
+                
+ </div>
+ <div class="tab-pane fade" id="nav-about4" role="tabpanel" aria-labelledby="nav-about-tab4">
+<center> 
+<FONT COLOR="white">
+<H2>
+Hospitality Committee
+</H2>
+</font>
+</center>
+ <div class="cccmember">
+
+  
+    
+                           </div>
+
+                     </div>
+                  </div>
+                
+                </div>
+              </div>
+        </div>
+      </div>
+</div>
+    <footer>
+        <div class="container-fluid">
+            <div class="col-md-12">
+                <p>Copyright &copy; 2018 Company Name 
+    
+    | Designed by TemplateMo</p>
+            </div>
+        </div>
+    </footer>
+
+
+    
+
+    
+
+    
+    <section class="overlay-menu">
+      <div class="container">
+        <div class="row">
+          <div class="main-menu">
+              <ul>
+                  <li>
+                      <a href="">Home</a>
+                  </li>
+                  <li>
+                      <a href="/register">Register</a>
+                  </li>
+                  <li>
+                      <a href="/teams">Team</a>
+                  </li>
+                  <li>
+                      <a href="/events">Events</a>
+                  </li>
+                  <li>
+                      <a href="/gallery">Gallery</a>
+                  </li>
+                  <li>
+                      <a href="/aboutus">About Us</a>
+                  </li>
+                  <li>
+                      <a href="/contactus">Contact Us</a>
+                  </li>
+                  
+              </ul>
+              <p>VERSION - ALL INDIA MCA MEET 2020</p>
+          </div>
+        </div>
+      </div>
+    </section>
+<script>
+document.querySelector('video').playbackRate = 0.85;
+</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="static/js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+    <script src="static/js/vendor/bootstrap.min.js"></script>
+    
+    <script src="static/js/plugins.js"></script>
+    <script src="static/js/main.js"></script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+</html>
